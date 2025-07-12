@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  api:
+    image: gutsy4heart/bookhouse-api
+    restart: always
+    ports:
+      - '5006:80'
+    depends_on:
+      - postgres
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__Default=Host=postgres;Database=bookhouse;Username=postgres;Password=postgres
+
+  postgres:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_DB: bookhouse
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - '8089:8080'
+
+volumes:
+  postgres_data: 
