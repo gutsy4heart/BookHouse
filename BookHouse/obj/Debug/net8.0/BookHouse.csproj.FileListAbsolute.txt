@@ -448,3 +448,4 @@ C:/Users/nurmammadli_m/Desktop/ASP.NET_/BookHouse/BookHouse/obj/Debug/net8.0/ref
 /home/gutsy/Desktop/ASP.NET_/BookHouse/BookHouse/obj/Debug/net8.0/ref/BookHouse.dll
 /home/gutsy/Desktop/ASP.NET_/BookHouse/BookHouse/bin/Debug/net8.0/Npgsql.dll
 /home/gutsy/Desktop/ASP.NET_/BookHouse/BookHouse/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/home/gutsy/Desktop/ASP.NET_/BookHouse/BookHouse/bin/Debug/net8.0/appsettings.Production.json

@@ -1,0 +1,78 @@
+name: CI/CD for BookHouse project
+
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch: 
+
+env:
+  REGISTRY: gchr.io
+  IMAGE_NAME: ${{github.repository}}
+
+jobs:
+  test:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloning repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      
+      - name: Restore dependencies
+        run: dotnet restore
+        
+      - name: Build
+        run: dotnet build --no-restore
+        
+      - name: Run unit test
+        run: dotnet test --no-build --verbosity normal
+
+  build-and-deploy:
+    if: github.event_name == 'push'
+    needs: test
+    runs-on: ubuntu-latest    
+
+    steps:
+      - name: Cloning repository
+        uses: actions/checkout@v4
+
+      - name: Docker login
+        run: echo "${{secrets.DOCKER_PASSWORD}}" | docker login -u "${{secrets.DOCKER_USERNAME}}" --password-stdin
+
+      - name: API image build and push to docker-hub
+        run: |
+          docker build -t ${{secrets.DOCKER_USERNAME}}/bookhouse-api .
+          docker push ${{secrets.DOCKER_USERNAME}}/bookhouse-api
+
+  deploy:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloning repository
+        uses: actions/checkout@v4
+      
+      - name: Azure Debian VM Deploy
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{secrets.AZURE_VM_HOST}}
+          username: ${{secrets.AZURE_VM_USERNAME}}
+          key: ${{secrets.AZURE_VM_SSH_KEY}}
+          port: 22
+
+          script: |
+            if [ ! -d "/app/bookhouse/.git" ]; then
+              git clone https://github.com/${{ github.repository }} /app/bookhouse
+            fi
+                    
+            cd /app/bookhouse
+            git pull origin master
+                    
+            docker compose pull
+            docker compose down
+            docker compose up -d
+            docker image prune -f 
