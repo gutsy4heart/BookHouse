@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\murad\\desktop\\BookHouse\\Bookhouse\\BookHouse.csproj": {}
+    "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\BookHouse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\murad\\desktop\\BookHouse\\Bookhouse\\BookHouse.csproj": {
+    "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\BookHouse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\murad\\desktop\\BookHouse\\Bookhouse\\BookHouse.csproj",
+        "projectUniqueName": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\BookHouse.csproj",
         "projectName": "BookHouse",
-        "projectPath": "C:\\Users\\murad\\desktop\\BookHouse\\Bookhouse\\BookHouse.csproj",
+        "projectPath": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\BookHouse.csproj",
         "packagesPath": "C:\\Users\\murad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\murad\\desktop\\BookHouse\\Bookhouse\\obj\\",
+        "outputPath": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\murad\\AppData\\Roaming\\NuGet\\NuGet.Config",

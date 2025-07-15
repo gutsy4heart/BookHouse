@@ -10,7 +10,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
       - ASPNETCORE_URLS=http://+:8080
-      - ConnectionStrings__Default=Host=postgres;Database=bookhouse;Username=postgres;Password=postgres
+      - ConnectionStrings__Default=Host=postgres;Database=bookhouse;Username=postgres;Password=bookhouse
     depends_on:
       postgres:
         condition: service_healthy

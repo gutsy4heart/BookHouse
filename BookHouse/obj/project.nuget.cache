@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I4WAJZWMTtU=",
+  "dgSpecHash": "o1lm+H6+2ds=",
   "success": true,
-  "projectFilePath": "C:\\Users\\murad\\desktop\\BookHouse\\Bookhouse\\BookHouse.csproj",
+  "projectFilePath": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\BookHouse.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\murad\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\murad\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
