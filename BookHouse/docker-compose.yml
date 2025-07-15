@@ -1,30 +1,69 @@
+version: '3.8'
+
 services:
   api:
-    build: .
-    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - '5006:80'
-    depends_on:
-      - postgres
+      - "5001:8080"  # 5001 на хосте -> 8080 в контейнере
     environment:
       - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
       - ConnectionStrings__Default=Host=postgres;Database=bookhouse;Username=postgres;Password=postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - bookhouse-network
 
   postgres:
     image: postgres:15
     restart: always
+    ports:
+      - "8080:5432"  # 8080 на хосте -> 5432 в контейнере
     environment:
       POSTGRES_DB: bookhouse
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d bookhouse"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - bookhouse-network
 
   adminer:
     image: adminer
     restart: always
     ports:
-      - '8089:8080'
+      - "8082:8080"  # Adminer на порту 8082
+    depends_on:
+      - postgres
+    networks:
+      - bookhouse-network
+
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["dotnet", "ef", "database", "update", "--project", "BookHouse.csproj"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__Default=Host=postgres;Database=bookhouse;Username=postgres;Password=postgres
+    networks:
+      - bookhouse-network
 
 volumes:
-  postgres_data: 
+  postgres_data:
+
+networks:
+  bookhouse-network:
+    driver: bridge

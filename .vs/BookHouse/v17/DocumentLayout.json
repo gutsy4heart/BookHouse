@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\",
+  "WorkspaceRootPath": "C:\\Users\\murad\\Desktop\\BookHouse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\nurmammadli_m\\desktop\\asp.net_\\bookhouse\\bookhouse\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\model\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\murad\\desktop\\bookhouse\\bookhouse\\bookhouse.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\bookhouse.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\nurmammadli_m\\desktop\\asp.net_\\bookhouse\\bookhouse\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\murad\\desktop\\bookhouse\\bookhouse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\murad\\desktop\\bookhouse\\bookhouse\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\murad\\desktop\\bookhouse\\bookhouse\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\murad\\desktop\\bookhouse\\bookhouse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\murad\\desktop\\bookhouse\\bookhouse\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\nurmammadli_m\\desktop\\asp.net_\\bookhouse\\bookhouse\\repository\\concrete\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\repository\\concrete\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\nurmammadli_m\\desktop\\asp.net_\\bookhouse\\bookhouse\\repository\\abstract\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\murad\\desktop\\bookhouse\\bookhouse\\repository\\abstract\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\repository\\abstract\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\nurmammadli_m\\desktop\\asp.net_\\bookhouse\\bookhouse\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\model\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\nurmammadli_m\\desktop\\asp.net_\\bookhouse\\bookhouse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|c:\\users\\murad\\desktop\\bookhouse\\bookhouse\\repository\\concrete\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8F1BA921-650C-4823-9EFE-4E9DC2578D7A}|BookHouse\\BookHouse.csproj|solutionrelative:bookhouse\\repository\\concrete\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,81 +42,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Model\\Book.cs",
-              "RelativeDocumentMoniker": "BookHouse\\Model\\Book.cs",
-              "ToolTip": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Model\\Book.cs",
-              "RelativeToolTip": "BookHouse\\Model\\Book.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T17:15:16.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "BookHouse\\Controllers\\BookController.cs",
-              "ToolTip": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Controllers\\BookController.cs",
-              "RelativeToolTip": "BookHouse\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T16:59:46.9Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Model\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "BookHouse\\Model\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Model\\AppDbContext.cs",
-              "RelativeToolTip": "BookHouse\\Model\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T16:41:36.567Z",
+              "Title": "BookHouse",
+              "DocumentMoniker": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\BookHouse.csproj",
+              "RelativeDocumentMoniker": "BookHouse\\BookHouse.csproj",
+              "ToolTip": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\BookHouse.csproj",
+              "RelativeToolTip": "BookHouse\\BookHouse.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-15T10:35:35.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\docker-compose.yml",
+              "RelativeDocumentMoniker": "BookHouse\\docker-compose.yml",
+              "ToolTip": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\docker-compose.yml",
+              "RelativeToolTip": "BookHouse\\docker-compose.yml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-07-15T10:26:29.776Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IBookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Repository\\Abstract\\IBookRepository.cs",
-              "RelativeDocumentMoniker": "BookHouse\\Repository\\Abstract\\IBookRepository.cs",
-              "ToolTip": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Repository\\Abstract\\IBookRepository.cs",
-              "RelativeToolTip": "BookHouse\\Repository\\Abstract\\IBookRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T16:08:59.219Z"
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Dockerfile",
+              "RelativeDocumentMoniker": "BookHouse\\Dockerfile",
+              "ToolTip": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Dockerfile",
+              "RelativeToolTip": "BookHouse\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-07-15T10:26:19.953Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\appsettings.json",
+              "RelativeDocumentMoniker": "BookHouse\\appsettings.json",
+              "ToolTip": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\appsettings.json",
+              "RelativeToolTip": "BookHouse\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-15T10:25:10.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Repository\\Concrete\\BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Repository\\Concrete\\BookRepository.cs",
               "RelativeDocumentMoniker": "BookHouse\\Repository\\Concrete\\BookRepository.cs",
-              "ToolTip": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Repository\\Concrete\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Repository\\Concrete\\BookRepository.cs",
               "RelativeToolTip": "BookHouse\\Repository\\Concrete\\BookRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAMwCQAAABBAAAA",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwDgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T16:01:09.393Z"
+              "WhenOpened": "2025-07-15T10:08:13.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Repository\\Abstract\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "BookHouse\\Repository\\Abstract\\IBookRepository.cs",
+              "ToolTip": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Repository\\Abstract\\IBookRepository.cs",
+              "RelativeToolTip": "BookHouse\\Repository\\Abstract\\IBookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T10:06:56.661Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Program.cs",
-              "RelativeDocumentMoniker": "BookHouse\\Program.cs",
-              "ToolTip": "C:\\Users\\nurmammadli_m\\Desktop\\ASP.NET_\\BookHouse\\BookHouse\\Program.cs",
-              "RelativeToolTip": "BookHouse\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAyAAAA",
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "BookHouse\\Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Controllers\\BookController.cs",
+              "RelativeToolTip": "BookHouse\\Controllers\\BookController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T15:48:57.971Z"
+              "WhenOpened": "2025-07-15T09:46:11.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Program.cs",
+              "RelativeDocumentMoniker": "BookHouse\\Program.cs",
+              "ToolTip": "C:\\Users\\murad\\Desktop\\BookHouse\\BookHouse\\Program.cs",
+              "RelativeToolTip": "BookHouse\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAuwDMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-15T09:21:51.375Z",
+              "EditorCaption": ""
             }
           ]
         }

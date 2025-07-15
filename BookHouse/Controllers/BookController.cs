@@ -1,77 +1,56 @@
 ﻿using BookHouse.Repository.Abstract;
 using Microsoft.AspNetCore.Mvc;
 using BookHouse.Model;
+
 namespace BookHouse.Controllers;
 
-
-[Route("api/[controller]")]
 [ApiController]
-public class BookController : Controller
+[Route("api/books")]
+public class BooksController : ControllerBase
 {
-    private readonly IBookRepository _repos;
+    private readonly IBookRepository _repository;
 
-    public BookController(IBookRepository repos) => _repos = repos;
-
-    #region Get
+    public BooksController(IBookRepository repository)
+    {
+        _repository = repository;
+    }
 
     [HttpGet]
-    [ProducesResponseType(200)]
-    [ProducesResponseType(204)]
+    [ProducesResponseType(200, Type = typeof(IEnumerable<Book>))]
     public async Task<IActionResult> GetAll()
     {
-        var books = await _repos.GetAllAsync();
+        var books = await _repository.GetAllAsync();
         return Ok(books);
     }
 
     [HttpGet("{id}")]
+    [ProducesResponseType(200, Type = typeof(Book))]
+    [ProducesResponseType(404)]
     public async Task<IActionResult> GetById(int id)
     {
-        var bookByID = await _repos.GetByIdAsync(id);
-        if (bookByID is null) { NotFound("Book is not found"); }
-        return Ok(bookByID);
+        var book = await _repository.GetByIdAsync(id);
+        return book is null ? NotFound() : Ok(book);
     }
-
-    #endregion
-    #region Create
 
     [HttpPost]
-    [ProducesResponseType(200)]
-    [ProducesResponseType(204)]
-
-    public async Task<IActionResult> AddBook(Book book)
+    [ProducesResponseType(201, Type = typeof(Book))]
+    public async Task<IActionResult> Create([FromBody] Book book)
     {
-        var newBook = await _repos.AddBookAsync(book);
-        return Ok(newBook);
+        var createdBook = await _repository.AddBookAsync(book);
+        return CreatedAtAction(nameof(GetById), new { id = createdBook.Id }, createdBook);
     }
-
-    #endregion
-
-    #region Update
 
     [HttpPut]
-    [ProducesResponseType(200)]
-    [ProducesResponseType(204)]
     public async Task<IActionResult> UpdateBook(Book book)
     {
-        var updateBook = await _repos.UpdateBookAsync(book);
-        if (updateBook is null) { NotFound("Book is not found"); }
-        return Ok(updateBook);
-
-       
+        var updatedBook = await _repository.UpdateBookAsync(book);
+        return updatedBook is null ? NotFound() : Ok(updatedBook);
     }
-    #endregion
 
-    #region Delete
     [HttpDelete("{id}")]
-    [ProducesResponseType(200)]
-    [ProducesResponseType(204)]
-
     public async Task<IActionResult> DeleteBook(int id)
     {
-        await _repos.DeleteBookAsync(id);
-        return NoContent();
+        var result = await _repository.DeleteBookAsync(id);
+        return result ? NoContent() : NotFound();
     }
-
-    #endregion
-
 }

@@ -2,39 +2,51 @@ using BookHouse.Model;
 using BookHouse.Repository.Abstract;
 using BookHouse.Repository.Concrete;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Конфигурация Swagger
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-var connectionString = builder.Configuration.GetConnectionString("Default");
-Console.WriteLine(connectionString);
-
-builder.Services.AddDbContext<AppDbContext>(option =>
+builder.Services.AddSwaggerGen(c =>
 {
-    option.UseNpgsql(connectionString);
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookHouse API", Version = "v1" });
 });
 
-builder.Services.AddScoped<IBookRepository, BookRepository>();
+// База данных
+var connectionString = builder.Configuration.GetConnectionString("Default")
+    ?? "Host=postgres;Database=bookhouse;Username=postgres;Password=postgres";
 
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(connectionString));
+
+// Регистрация сервисов
+builder.Services.AddControllers();
+builder.Services.AddScoped<IBookRepository, BookRepository>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// Включаем Swagger ВСЕГДА, без условий
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "BookHouse API v1");
+    c.RoutePrefix = "swagger"; // Доступ по /swagger
+});
 
+app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapGet("/", () => "BookHouse API is running!");
 
-app.Run();
+try
+{
+    app.Logger.LogInformation("Application starting...");
+    await app.RunAsync();
+}
+catch (Exception ex)
+{
+    app.Logger.LogCritical(ex, "Application startup failed");
+    throw;
+}
